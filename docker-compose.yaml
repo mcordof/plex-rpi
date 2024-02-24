@@ -9,7 +9,7 @@ services:
     stdin_open: true
     tty: true
     environment:
-      - TZ=America/Argentina/Mendoza
+      - TZ=America/Chile/Santiago
     ports:
       - 139:139
       - 445:445
