@@ -18,21 +18,16 @@ templates:
           quality: 720p
       tv:
       - Black Mirror
-      - Brooklyn Nine-Nine
-      - Homeland
-      - Luther
       - Mr Robot
+      - Formula 1: Drive to Survive
+      - Fenomenoide
+      - Animaniacs
+      - Alice in Borderland
+      - Arcane
+      - Cyberpunk: Edgerunners
+      - Avatar: La leyenda de Aang
       - Rick and Morty
-      - SEAL Team
-      - Sherlock
-      - Silicon Valley
-      - Suits
-      - The Flash
-      - The Good Fight
-      - The Walking Dead
-      - Tosh.0
-      - True Detective
-      - Westworld
+      - The Crown
 
     transmission:
       host: transmission

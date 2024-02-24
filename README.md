@@ -10,10 +10,10 @@ NOTA: Esta repo fue actualizada para correr usando flexget y transmission [en es
 
 ## Requerimientos iniciales
 
-Agregar tu usuario (cambiar `kbs` con tu nombre de usuario)
+Agregar tu usuario
 
 ```
-sudo useradd kbs -G sudo
+sudo useradd plex -G sudo
 ```
 
 Agregar esto al sudoers para correr sudo sin password
@@ -25,7 +25,7 @@ Agregar esto al sudoers para correr sudo sin password
 Agregar esta linea a `sshd_config` para que sólo tu usuario pueda hacer ssh
 
 ```
-echo "AllowUsers kbs" | sudo tee -a /etc/ssh/sshd_config
+echo "AllowUsers mapi" | sudo tee -a /etc/ssh/sshd_config
 sudo systemctl enable ssh && sudo systemctl start ssh
 ```
 
@@ -40,7 +40,8 @@ sudo apt-get update && sudo apt-get install -y \
      software-properties-common \
      vim \
      fail2ban \
-     ntfs-3g
+     ntfs-3g \
+     git
 ```
 
 Instalar Docker
@@ -65,8 +66,8 @@ export DOCKER_TMPDIR="/mnt/storage/docker-tmp"
 Agregar tu usuario al grupo docker 
 
 ```
-# Add kbs to docker group
-sudo usermod -a -G docker kbs
+# Add mapi to docker group
+sudo usermod -a -G docker mapi
 #(logout and login)
 docker-compose up -d
 ```
