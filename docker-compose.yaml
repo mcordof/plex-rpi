@@ -45,7 +45,7 @@ services:
     ports:
       - 9091:9091
       - 51413:51413
-      #- 51413:51413/udp
+      - 51413:51413/udp
     expose:
       - 9091
     restart: unless-stopped
