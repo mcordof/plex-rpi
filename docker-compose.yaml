@@ -90,7 +90,7 @@ services:
     network_mode: bridge
 
   wireguard:
-    image: lscr.io/linuxserver/wireguard
+    image: linuxserver/wireguard:arm64v8-latest
     container_name: wireguard
     cap_add:
       - NET_ADMIN
