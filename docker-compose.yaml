@@ -124,7 +124,7 @@ services:
     restart: unless-stopped
 
   wireguard:
-    image: lscr.io/linuxserver/wireguard:latest
+    image: lscr.io/linuxserver/wireguard:amd64-latest
     container_name: wireguard
     cap_add:
       - NET_ADMIN
