@@ -90,7 +90,7 @@ services:
     network_mode: bridge
 
   wireguard:
-    image: lscr.io/linuxserver/wireguard:latest
+    image: lscr.io/linuxserver/wireguard
     container_name: wireguard
     cap_add:
       - NET_ADMIN
@@ -101,7 +101,7 @@ services:
       - TZ=America/Santiago
       - SERVERURL=wireguard.domain.com #optional
       - SERVERPORT=51820 #optional
-      - PEERS=5 #optional
+      - PEERS=auto #optional
       - PEERDNS=auto #optional
       - INTERNAL_SUBNET=10.13.13.0 #optional
       - ALLOWEDIPS=0.0.0.0/0 #optional
